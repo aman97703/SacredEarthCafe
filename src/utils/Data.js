@@ -118,6 +118,24 @@ export const data = {
       price: 140,
       image: Special7,
     },
+    {
+      id: "15Jm1ARyI63H4as7",
+      title: "Food Plaza",
+      price: 140,
+      image: Special3,
+    },
+    {
+      id: "15Jm1AabnI63H4as7",
+      title: "Food Mango chap",
+      price: 140,
+      image: Special5,
+    },
+    {
+      id: "15Jm1AabnI63H4asb",
+      title: "Food aallo chap",
+      price: 140,
+      image: Special6,
+    },
   ],
   Desserts: [
     {
@@ -141,6 +159,24 @@ export const data = {
     {
       id: "GG2orAhkBAtl27hG",
       title: "Turmeric Cake",
+      price: 140,
+      image: Special1,
+    },
+    {
+      id: "GG2or2hkBAql27hG",
+      title: "Pyaz Cake",
+      price: 140,
+      image: Special1,
+    },
+    {
+      id: "aG2orAhkBAqld7hG",
+      title: "Aaloo Cake",
+      price: 140,
+      image: Special1,
+    },
+    {
+      id: "aG2orAhlBAqlm7iG",
+      title: "gobhee Cake",
       price: 140,
       image: Special1,
     },
