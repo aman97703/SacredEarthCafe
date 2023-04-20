@@ -35,51 +35,53 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className="cart_main">
-        <div className="current_orders">
-          <div
-            className="special_home_header pl-16 mt-32 mb-16"
-            onClick={() => setShoworder(!showorder)}
-          >
-            <div className="title14 color_sec mr-8">Current Order</div>
-            <span className="special_home_head_line"></span>
-            <span className={`ml-8 ${showorder && "rotate180"}`}>
-              <DownIcon />
-            </span>
-          </div>
-          {showorder && allItems.length > 0 && (
-            <div className="current_order_root">
-              {allItems.map((item) => (
-                <CartCard key={item.id} item={item} />
-              ))}
-              <div>
-                <p className="title13 color_76 underline text-start">
-                  Add cooking instruction
-                </p>
+      <div className="cart_root">
+        <div className="cart_main">
+          <div className="current_orders">
+            <div
+              className="special_home_header pl-16 mt-32 mb-16"
+              onClick={() => setShoworder(!showorder)}
+            >
+              <div className="title14 color_sec mr-8">Current Order</div>
+              <span className="special_home_head_line"></span>
+              <span className={`ml-8 ${showorder && "rotate180"}`}>
+                <DownIcon />
+              </span>
+            </div>
+            {showorder && allItems.length > 0 && (
+              <div className="current_order_root">
+                {allItems.map((item) => (
+                  <CartCard key={item.id} item={item} />
+                ))}
+                <div>
+                  <p className="title13 color_76 underline text-start">
+                    Add cooking instruction
+                  </p>
+                </div>
               </div>
-            </div>
-          )}
-        </div>
-      </div>
-      <div className="cart_main">
-        <div className="current_orders">
-          <div
-            className="special_home_header mt-32 mb-16 pl-16"
-            onClick={() => setShowPrev(!showPrev)}
-          >
-            <div className="title14 color_sec mr-8">Previous Orders</div>
-            <span className="special_home_head_line"></span>
-            <span className={`ml-8 ${showPrev && "rotate180"}`}>
-              <DownIcon />
-            </span>
+            )}
           </div>
-          {showPrev && allPrev.length > 0 && (
-            <div className="current_order_root">
-              {allPrev.map((item) => (
-                <PrevCartCard key={item.id} item={item} />
-              ))}
+        </div>
+        <div className="cart_main">
+          <div className="current_orders">
+            <div
+              className="special_home_header mt-32 mb-16 pl-16"
+              onClick={() => setShowPrev(!showPrev)}
+            >
+              <div className="title14 color_sec mr-8">Previous Orders</div>
+              <span className="special_home_head_line"></span>
+              <span className={`ml-8 ${showPrev && "rotate180"}`}>
+                <DownIcon />
+              </span>
             </div>
-          )}
+            {showPrev && allPrev.length > 0 && (
+              <div className="current_order_root">
+                {allPrev.map((item) => (
+                  <PrevCartCard key={item.id} item={item} />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div className="cart_foooter d-flex justify-content-between">

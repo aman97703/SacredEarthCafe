@@ -204,3 +204,17 @@
 .rotate180 {
   transform: rotate(180deg);
 }
+.search_input {
+  height: 44px;
+  background: #F1F1F1;
+  box-shadow: inset -2px 2px 4px rgba(204, 207, 207, 0.2), inset 2px -2px 4px rgba(204, 207, 207, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.9), inset 2px 2px 5px rgba(204, 207, 207, 0.9);
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+.cart_root{
+  min-height: 80vh;
+}

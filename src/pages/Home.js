@@ -1,7 +1,6 @@
 import React from "react";
 import DP from "../Assets/Images/dp.png";
 import UserCall from "../Assets/Icons/UserCall";
-import HashIcon from "../Assets/Icons/HashIcon";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import SpecialHome from "../Components/SpecialHome";
@@ -9,6 +8,8 @@ import MainHome from "../Components/MainHome";
 import Desert from "../Components/Desert";
 import Beverage from "../Components/Beverage";
 import Footer from "../Components/Footer";
+import { Search } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -45,6 +46,7 @@ function a11yProps(index) {
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
+  const navigate = useNavigate()
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -61,8 +63,8 @@ const Home = () => {
             <div className="icon_body">
               <UserCall />
             </div>
-            <div className="icon_body ml-16">
-              <HashIcon />
+            <div className="icon_body ml-16" onClick={()=>navigate('/search')}>
+              <Search />
             </div>
           </div>
         </div>
